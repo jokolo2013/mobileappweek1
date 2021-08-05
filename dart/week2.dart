@@ -2,10 +2,10 @@ void main() {
  // print(callGen(1991));
  // var x = callColor("white");
  // print(x);
- callWeb("Google",protocal: "https",port: 443);
+ callWeb("Google", protocal: "https", port: 443);
 }
 
-// (เงื่อนไข    )  ?  true  :  false
+// (เงื่อนไข    )  ?  true  :  false            print T : print F
 String callGen(int year) => (year >= 1996) ? "Gen Z" : "Gen Y";
 
 int callColor([String newColor = "pink"]) {
@@ -19,7 +19,7 @@ int callColor([String newColor = "pink"]) {
   }
   return color.length;
 }
-// fucntion                  name                                  arrow         
+// function                  name                                  arrow         
 void callWeb(String web,{int port = 80, String protocal = "http"}) => print("$protocal $web : $port");
 
 
