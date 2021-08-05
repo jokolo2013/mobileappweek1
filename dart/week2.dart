@@ -19,7 +19,7 @@ int callColor([String newColor = "pink"]) {
   }
   return color.length;
 }
-    
+// fucntion                  name                                  arrow         
 void callWeb(String web,{int port = 80, String protocal = "http"}) => print("$protocal $web : $port");
 
 
