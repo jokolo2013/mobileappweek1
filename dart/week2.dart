@@ -9,8 +9,8 @@ void main() {
 String callGen(int year) => (year >= 1996) ? "Gen Z" : "Gen Y";
 
 int callColor([String newColor = "pink"]) {
-  //                       0      1
-  List<dynamic> color = ["red", "blue", "green"];
+// Array type    ตัวแปร     0      1        2
+  List <dynamic> color = ["red", "blue", "green"];
 
   color.add(newColor);
 
