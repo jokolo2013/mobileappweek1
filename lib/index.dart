@@ -11,7 +11,7 @@ class Index extends StatelessWidget {
         child: Stack(
           children: [
             Positioned(
-              top: -20,
+              top: -50,
               left: -30,
               child: Image.asset(
                 "asset/image/orange-circle.png",
@@ -21,6 +21,9 @@ class Index extends StatelessWidget {
             Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
+                SizedBox(
+                  height: 80,
+                ),
                 Image.asset(
                   "asset/image/logo-kmutnb.png",
                   width: size.width * 0.35,
@@ -68,7 +71,7 @@ class Index extends StatelessWidget {
                 ),
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.amber[900],
+                    primary: Colors.amber[200],
                     padding: EdgeInsets.fromLTRB(130, 12, 130, 12),
                     shape: StadiumBorder(),
                   ),
@@ -83,6 +86,14 @@ class Index extends StatelessWidget {
                   },
                 ),
               ],
+            ),
+            Positioned(
+              bottom: -80,
+              left: -80,
+              child: Image.asset(
+                "asset/image/orange-circle.png",
+                width: size.width * 0.5,
+              ),
             ),
           ],
         ),
