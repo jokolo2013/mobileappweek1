@@ -5,18 +5,22 @@ class Index extends StatelessWidget {
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
 
-    var x = 300;
     return Scaffold(
       body: Container(
         alignment: Alignment.center,
         child: Stack(
           children: [
+            Positioned(
+              top: -20,
+              left: -30,
+              child: Image.asset(
+                "asset/image/orange-circle.png",
+                width: size.width * 0.2,
+              ),
+            ),
             Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                SizedBox(
-                  height: 80,
-                ),
                 Image.asset(
                   "asset/image/logo-kmutnb.png",
                   width: size.width * 0.35,
