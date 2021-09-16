@@ -12,7 +12,7 @@ class Myapp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Index(),
+      home: Index(), //ref.Name Class
       routes: {
         'Login': (context) => Login(),
         'Register': (context) => Register(),
