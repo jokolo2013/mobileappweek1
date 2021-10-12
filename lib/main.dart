@@ -7,7 +7,7 @@ import 'screen/home.dart';
 import 'screen/index.dart';
 import 'screen/login.dart';
 
-void main() => runApp(Myapp()); //test login git
+void main() => runApp(Myapp());
 
 class Myapp extends StatelessWidget {
   @override
