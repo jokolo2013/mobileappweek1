@@ -39,6 +39,75 @@ class _DashboardState extends State<Dashboard> {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
+      drawer: Drawer(
+        child: ListView(
+          children: [
+            DrawerHeader(
+              decoration: BoxDecoration(
+                color: sColor,
+              ),
+              child: Text(
+                'Package',
+                style: TextStyle(
+                  fontSize: 28,
+                  color: pColor,
+                ),
+              ),
+            ),
+            ListTile(
+              title: Text(
+                'Video',
+                style: TextStyle(
+                  fontSize: 24,
+                ),
+              ),
+              leading: Icon(
+                Icons.video_call,
+                color: Colors.yellow,
+                size: 36,
+              ),
+              onTap: () {
+                print('Menu Video');
+                Navigator.pushNamed(context, 'Video');
+              },
+            ),
+            ListTile(
+              title: Text(
+                'Image',
+                style: TextStyle(
+                  fontSize: 24,
+                ),
+              ),
+              leading: Icon(
+                Icons.image,
+                color: Colors.pink,
+                size: 36,
+              ),
+              onTap: () {
+                print('Menu Image');
+                Navigator.pushNamed(context, 'Image');
+              },
+            ),
+            ListTile(
+              title: Text(
+                'Location',
+                style: TextStyle(
+                  fontSize: 24,
+                ),
+              ),
+              leading: Icon(
+                Icons.gps_fixed,
+                color: Colors.green,
+                size: 36,
+              ),
+              onTap: () {
+                print('Menu GPS');
+                 Navigator.pushNamed(context, 'Location');
+              },
+            ),
+          ],
+        ),
+      ),
       appBar: AppBar(
         title: Row(
           children: <Widget>[
